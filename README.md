@@ -8,7 +8,7 @@ The challenge involves deploying a Three-Tier Web Application using ReactJS, Nod
 - Basic knowledge of Docker, and AWS services.
 - An AWS account with necessary permissions.
 
-📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
+📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, Which is Highly scalable and Available in EKS.**
 
 ## Getting Started
 Creating AWS EKS Cluster using EKSCTL
