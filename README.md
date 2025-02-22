@@ -62,6 +62,89 @@ echo 'alias k=kubectl' >> ~/.zshrc   # For Zsh To make it persistent, add it to 
 source ~/.bashrc  # For Bash To apply the changes
 source ~/.zshrc   # For Zsh To apply the changes
 ```
+### To Setup More Alias for Convinence using below automation way 
+```
+cat <<EOF >> ~/.bashrc
+
+# Kubernetes Aliases
+alias k="kubectl"
+alias kc="kubectl config"
+alias kctx="kubectl config use-context"
+alias kns="kubectl config set-context --current --namespace"
+
+# Get Commands
+alias kg="kubectl get"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get svc"
+alias kgd="kubectl get deployments"
+alias kgn="kubectl get nodes"
+alias kga="kubectl get all"
+alias kgcm="kubectl get configmap"
+alias kgsec="kubectl get secret"
+
+# Describe Commands
+alias kd="kubectl describe"
+alias kdp="kubectl describe pod"
+alias kds="kubectl describe svc"
+alias kdd="kubectl describe deployment"
+alias kdn="kubectl describe node"
+
+# Logs
+alias kl="kubectl logs"
+alias klf="kubectl logs -f"
+
+# Apply & Delete
+alias ka="kubectl apply -f"
+alias kdelf="kubectl delete -f"
+alias kdelp="kubectl delete pod"
+alias kdelns="kubectl delete namespace"
+alias kdelcm="kubectl delete configmap"
+alias kdelsec="kubectl delete secret"
+
+# Exec & Port-forwarding
+alias ke="kubectl exec -it"
+alias kpf="kubectl port-forward"
+
+# Advanced Shortcuts
+alias ksys="kubectl get pods -A"
+alias krun="kubectl run --rm -i --tty --image"
+alias kedit="kubectl edit"
+alias kexpose="kubectl expose"
+
+# Kubernetes Rollout
+alias kru="kubectl rollout undo"
+alias krd="kubectl rollout restart deployment"
+
+# Kubernetes Scale
+alias ksdp="kubectl scale deployment"
+alias kssts="kubectl scale statefulset"
+
+# Kubernetes Taint & Label
+alias ktaint="kubectl taint nodes"
+alias klabel="kubectl label"
+
+# Kubernetes Debugging
+alias ktop="kubectl top"
+alias ktopn="kubectl top nodes"
+alias ktopp="kubectl top pods"
+
+# Helm (if using Helm)
+alias h="helm"
+alias hl="helm list"
+alias hi="helm install"
+alias hu="helm upgrade"
+alias hd="helm delete"
+
+EOF
+
+```
+# Reload Bash Configuration. Run the following command to apply the changes and Verify the Aliases
+```
+source ~/.bashrc
+alias | grep 'kubectl'
+
+```
+
 ### Step 7: Setup EKS Cluster
 ``` shell
 eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
