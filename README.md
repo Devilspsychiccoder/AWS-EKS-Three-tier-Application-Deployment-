@@ -54,7 +54,14 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 alias e=eksctl
 ```
-
+### To Setup Alias for Convinence
+```
+alias k=kubectl
+echo 'alias k=kubectl' >> ~/.bashrc  # For Bash To make it persistent, add it to your shell configuration file:
+echo 'alias k=kubectl' >> ~/.zshrc   # For Zsh To make it persistent, add it to your shell configuration file:
+source ~/.bashrc  # For Bash To apply the changes
+source ~/.zshrc   # For Zsh To apply the changes
+```
 ### Step 7: Setup EKS Cluster
 ``` shell
 eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
