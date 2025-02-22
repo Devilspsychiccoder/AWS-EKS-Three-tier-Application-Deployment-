@@ -18,7 +18,7 @@ Creating AWS EKS Cluster using EKSCTL
 - Generate Security Credentials: Access Key and Secret Access Key.
 
 ### Step 2: EC2 Setup
-- Launch an Ubuntu instance in your favourite region (eg. region `us-west-2`). Use T2.Micro as we will just be using this instance to interact with the EKS Cluster 
+- Launch an Ubuntu instance in your favourite region (eg. region `us-west-2`). Use Instance Type as T2.Micro as we will just be using this instance to interact with the EKS Cluster 
 - SSH into the instance from your local machine. Install The following components 
 
 ### Step 3: Install AWS CLI v2
