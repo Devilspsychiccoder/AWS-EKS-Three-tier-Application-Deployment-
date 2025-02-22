@@ -206,6 +206,8 @@ Go to EC2 console, access security group section and delete security groups crea
 ## Support
 For any queries or issues, please open an issue in the repository.
 
+This is how the complete Multi-Cluster will be setup in 15 Mins using eksctl utility tool 
+
 ![ERD Diagram](diagram.png)
 
 ---
