@@ -143,7 +143,7 @@ alias hd="helm delete"
 EOF
 
 ```
-# Step 10: Reload Bash Configuration. Run the following command to apply the changes and Verify the Aliases
+### Step 10: Reload Bash Configuration. Run the following command to apply the changes and Verify the Aliases
 ```
 source ~/.bashrc
 alias | grep 'kubectl'
