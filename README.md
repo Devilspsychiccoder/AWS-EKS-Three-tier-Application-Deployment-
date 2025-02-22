@@ -27,9 +27,13 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 sudo apt install unzip
 unzip awscliv2.zip
 sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
-aws configure
 ```
+### Step 4: Configure AWS CLI 
+```
+aws configure
 
+#Enter Your AccessKey, Secret AccessKey from IAM>user>role Store it some where safe. Also enter Region and Output as Json 
+```
 ### Step 4: Install Docker
 ``` shell
 sudo apt-get update
