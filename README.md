@@ -1,4 +1,4 @@
-# AWS EKS - ThreeTierAppChallenge
+# AWS EKS - TwoTierAppChallenge
 
 ## Overview
 This repository hosts the `#TWSThreeTierAppChallenge` for the TWS community. 
