@@ -32,9 +32,10 @@ sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin --update
 ```
 aws configure
 
-#Enter Your AccessKey, Secret AccessKey from IAM>user>role Store it some where safe. Also enter Region and Output as Json 
+#Enter Your AccessKey, Secret AccessKey from IAM>user>role Store it some where safe. Also enter Region and Output as Json
+# Test if you have connection to AWS by using the command aws s3 ls 
 ```
-### Step 4: Install Docker
+### Step 5: Install Docker
 ``` shell
 sudo apt-get update
 sudo apt install docker.io
@@ -42,7 +43,7 @@ docker ps
 sudo chown $USER /var/run/docker.sock
 ```
 
-### Step 5: Install kubectl
+### Step 6: Install kubectl
 ``` shell
 curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
 chmod +x ./kubectl
@@ -51,14 +52,14 @@ kubectl version --short --client
 alias k=kubectl
 ```
 
-### Step 6: Install eksctl
+### Step 7: Install eksctl
 ``` shell
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 alias e=eksctl
 ```
-### To Setup Alias for Convinence
+### Step 8: To Setup Alias for Convinence
 ```
 alias k=kubectl
 echo 'alias k=kubectl' >> ~/.bashrc  # For Bash To make it persistent, add it to your shell configuration file:
@@ -66,7 +67,7 @@ echo 'alias k=kubectl' >> ~/.zshrc   # For Zsh To make it persistent, add it to 
 source ~/.bashrc  # For Bash To apply the changes
 source ~/.zshrc   # For Zsh To apply the changes
 ```
-### To Setup More Alias for Convinence using below automation way 
+### Step 9: To Setup More Alias for Convinence using below automation way 
 ```
 cat <<EOF >> ~/.bashrc
 
@@ -142,28 +143,28 @@ alias hd="helm delete"
 EOF
 
 ```
-# Reload Bash Configuration. Run the following command to apply the changes and Verify the Aliases
+# Step 10: Reload Bash Configuration. Run the following command to apply the changes and Verify the Aliases
 ```
 source ~/.bashrc
 alias | grep 'kubectl'
 
 ```
 
-### Step 7: Setup EKS Cluster
+### Step 11: Setup EKS Cluster
 ``` shell
 eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
 aws eks update-kubeconfig --region us-west-2 --name three-tier-cluster
 kubectl get nodes
 ```
 
-### Step 8: Run Manifests
+### Step 12: Run Manifests
 ``` shell
 kubectl create namespace workshop
 kubectl apply -f .
 kubectl delete -f .
 ```
 
-### Step 9: Install AWS Load Balancer
+### Step 13: Install AWS Load Balancer
 ``` shell
 curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/install/iam_policy.json
 aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://iam_policy.json
@@ -171,7 +172,7 @@ eksctl utils associate-iam-oidc-provider --region=us-west-2 --cluster=three-tier
 eksctl create iamserviceaccount --cluster=three-tier-cluster --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::626072240565:policy/AWSLoadBalancerControllerIAMPolicy --approve --region=us-west-2
 ```
 
-### Step 10: Deploy AWS Load Balancer Controller
+### Step 14: Deploy AWS Load Balancer Controller
 ``` shell
 sudo snap install helm --classic
 helm repo add eks https://aws.github.io/eks-charts
