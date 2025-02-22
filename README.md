@@ -152,8 +152,8 @@ alias | grep 'kubectl'
 
 ### Step 11: Setup EKS Cluster
 ``` shell
-eksctl create cluster --name three-tier-cluster --region us-west-2 --node-type t2.medium --nodes-min 2 --nodes-max 2
-aws eks update-kubeconfig --region us-west-2 --name three-tier-cluster
+eksctl create cluster --name my-cluster --region us-west-2 --node-type t2.medium --nodes-min 1 --nodes-max 2
+aws eks update-kubeconfig --region us-west-2 --name my-cluster
 kubectl get nodes
 ```
 
