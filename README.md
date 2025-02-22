@@ -11,15 +11,15 @@ The challenge involves deploying a Three-Tier Web Application using ReactJS, Nod
 📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.**
 
 ## Getting Started
-To get started with this project, refer to our [comprehensive guide](https://amanpathakdevops.medium.com/advanced-end-to-end-devsecops-kubernetes-three-tier-project-using-aws-eks-argocd-prometheus-fbbfdb956d1a) that walks you through IAM user setup, infrastructure provisioning, CI/CD pipeline configuration, EKS cluster creation, and more.
+Creating AWS EKS Cluster using EKSCTL
 
 ### Step 1: IAM Configuration
 - Create a user `eks-admin` with `AdministratorAccess`.
 - Generate Security Credentials: Access Key and Secret Access Key.
 
 ### Step 2: EC2 Setup
-- Launch an Ubuntu instance in your favourite region (eg. region `us-west-2`).
-- SSH into the instance from your local machine.
+- Launch an Ubuntu instance in your favourite region (eg. region `us-west-2`). Use T2.Micro as we will just be using this instance to interact with the EKS Cluster 
+- SSH into the instance from your local machine. Install The following components 
 
 ### Step 3: Install AWS CLI v2
 ``` shell
