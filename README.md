@@ -11,8 +11,8 @@
 ## If the Two tier Project is successfully completed then it should show like this:
 
 <p align="center">
-  <img src="/diagram/diagram3.png" width="499">
-  <img src="/diagram/diagram4.png" width="499">
+  <img src="/diagram/diagram3.png" width="490">
+  <img src="/diagram/diagram4.png" width="490">
 </p>
 
 
