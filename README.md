@@ -6,11 +6,11 @@
 
 ## Application Achitecture Flow 
 
-![ERD Diagram](diagram2.png)
+![ERD Diagram](/diagram/diagram2.png)
 
 ## If the Two tier Project is successfully completed then it should show like this :
 
-![ERD Diagram](diagram3.png) ![ERD Diagram](diagram4.png)
+![ERD Diagram](/diagram/diagram3.png) ![ERD Diagram](/diagram/diagram4.png)
 
 
 ## Overview
@@ -222,7 +222,7 @@ For any queries or issues, please open an issue in the repository.
 
 ## This is how the complete Multi-Cluster will be setup in 15 Mins using eksctl utility tool 
 
-![ERD Diagram](diagram.png)
+![ERD Diagram](/diagram/diagram.png)
 
 ---
 Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository and send me pull request I will review and approve 
