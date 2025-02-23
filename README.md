@@ -18,7 +18,7 @@
 
 ## Overview
 This repository hosts the `#TwoTierAppProject` for the Avik(AKB) community. 
-The challenge involves deploying a Two-Tier Web Application as a Micro Service using Python Flask and MySQL DB with deployment on AWS EKS. This Application is Highly Fault Tolerant and Highly Scalable and Avaialble and the application can handle 50000 Concurent users with best Devops Practices. Dockrized the image and Deployed in AWS EKS with Multi-Cluster
+The challenge involves deploying a Two-Tier Web Application as a Micro Service using Python Flask and MySQL DB with deployment on AWS EKS. This Application is Highly Fault Tolerant and Highly Scalable and Avaialble and the application can handle 50000 Concurent users with best Devops Practices. Dockrized the image and Deployed in AWS EKS with Multi-Node-Cluster. The Application and self-heal, auto-heal and can auto-scale. The same can be deployed using Helm charts. With this we have achieved and improved scalability and depooyment time with zero dowtime 
 
 ## Prerequisites
 - Basic knowledge of Docker, and AWS services.
