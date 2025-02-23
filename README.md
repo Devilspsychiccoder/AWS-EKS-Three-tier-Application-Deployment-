@@ -21,7 +21,7 @@ This repository hosts the `#TwoTierAppProject` for the DevOps and SRE community 
 The challenge involves deploying a Two-Tier Web Application as a Micro Service using Python Flask and MySQL DB with deployment on AWS EKS. This Application is Highly Fault Tolerant and Highly Scalable and Available and the application can handle 50000 Concurrent users with best DevOps Practices. Dockerized the image and Deployed in AWS EKS with Multi-Node-Cluster. The Application can self-heal, auto-heal and can auto-scale. The same can be deployed using Helm charts. With this we have achieved and improved scalability and deployment time with zero downtime. We have used EKSCTL to create and provision the AWS EKS Infrastructure as it works seamlessly with CloudFormation, IAM, and other AWS services. It automatically sets up VPCs, subnets, security groups, IAM roles, and worker nodes. It simplifies the process of setting up an EKS cluster by handling the underlying AWS resources, such as EC2 instances, VPCs, IAM roles, and security groups. With this we were able to provision the EKS Cluster in 10 Mins which usually takes hours by setting up the roles and VPC's
 
 ## Prerequisites
-- Basic knowledge of Docker, and AWS services.
+- Knowledge of Docker,Kubernetes and AWS services.
 - An AWS account with necessary permissions.
 
 📈 **The journey covered everything from setting up tools to deploying a Three-Tier app, Which is Highly scalable and Available in EKS.**
