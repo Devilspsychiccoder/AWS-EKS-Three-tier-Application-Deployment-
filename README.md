@@ -8,7 +8,7 @@
 
 ![ERD Diagram](/diagram/diagram2.png)
 
-## If the Two tier Project is successfully completed then it should show like this :
+## If the Two tier Project is successfully completed then it should show like this:
 
 ![ERD Diagram](/diagram/diagram3.png) ![ERD Diagram](/diagram/diagram4.png)
 
