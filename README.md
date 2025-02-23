@@ -17,8 +17,8 @@
 
 
 ## Overview
-This repository hosts the `#TwoTierAppChallenge` for the Avik(AKB) community. 
-The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR). Merged PRs will earn exciting prizes!
+This repository hosts the `#TwoTierAppProject` for the Avik(AKB) community. 
+The challenge involves deploying a Two-Tier Web Application as a Micro Service using Python Flask and MySQL DB with deployment on AWS EKS. 
 
 ## Prerequisites
 - Basic knowledge of Docker, and AWS services.
@@ -228,4 +228,4 @@ For any queries or issues, please open an issue in the repository.
 ![ERD Diagram](/diagram/diagram.png)
 
 ---
-Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository and send me pull request I will review and approve 
+Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR)
