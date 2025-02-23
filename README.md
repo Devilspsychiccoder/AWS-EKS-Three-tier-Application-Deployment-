@@ -1,4 +1,4 @@
-# AWS EKS - TwoTierAppChallenge
+# AWS EKS - TwoTier Fault Tolerant Highly Scalable Application 
 
 ## Infrastructure Achitecture Flow 
 
