@@ -10,7 +10,10 @@
 
 ## If the Two tier Project is successfully completed then it should show like this:
 
-![ERD Diagram](/diagram/diagram3.png) ![ERD Diagram](/diagram/diagram4.png)
+<p align="center">
+  <img src="/diagram/diagram3.png" width="300">
+  <img src="/diagram/diagram4.png" width="300">
+</p>
 
 
 ## Overview
