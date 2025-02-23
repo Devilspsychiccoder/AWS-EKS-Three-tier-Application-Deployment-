@@ -5,7 +5,7 @@ Use this repository to setup kubeadm https://github.com/LondheShubham153/kubesta
 ## SetUp
 - First clone the code to your machine
 ```bash
-git clone https://github.com/LondheShubham153/two-tier-flask-app.git
+https://github.com/Devilspsychiccoder/AWS-EKS-Two-tier-Application-Deployment.git
 ```
 - Move to k8s directory
 ```bash
