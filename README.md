@@ -228,4 +228,4 @@ For any queries or issues, please open an issue in the repository.
 ![ERD Diagram](/diagram/diagram.png)
 
 ---
-Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR)
+Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR)
