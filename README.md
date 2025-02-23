@@ -2,7 +2,7 @@
 
 ## Infrastructure Achitecture Flow 
 
-![ERD Diagram](diagram1.png)
+![ERD Diagram](/diagram/diagram1.png)
 
 ## Application Achitecture Flow 
 
