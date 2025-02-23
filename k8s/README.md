@@ -1,6 +1,6 @@
 # How to setup two-tier application deployment on kubernetes cluster
 ## First setup kubernetes kubeadm cluster
-Use this repository to setup kubeadm https://github.com/LondheShubham153/kubestarter/blob/main/kubeadm_installation.md
+Use this repository to setup kubeadm https://github.com/Devilspsychiccoder/Kubetnetes/tree/main/Kubeadm_Installation_Scripts_and_Documentation
 
 ## SetUp
 - First clone the code to your machine
