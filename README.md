@@ -8,6 +8,11 @@
 
 ![ERD Diagram](diagram2.png)
 
+## If the Two tier Project is successfully completed then it should show like this :
+
+![ERD Diagram](diagram3.png) ![ERD Diagram](diagram4.png)
+
+
 ## Overview
 This repository hosts the `#TwoTierAppChallenge` for the Avik(AKB) community. 
 The challenge involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. Participants are encouraged to deploy the application, add creative enhancements, and submit a Pull Request (PR). Merged PRs will earn exciting prizes!
@@ -220,4 +225,4 @@ For any queries or issues, please open an issue in the repository.
 ![ERD Diagram](diagram.png)
 
 ---
-Happy Learning! 🚀👨‍💻👩‍💻
+Happy Learning! 🚀👨‍💻👩‍💻 Feel free to Fork/Clone the Repository and send me pull request I will review and approve 
