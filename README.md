@@ -162,11 +162,12 @@ alias | grep 'kubectl'
 ``` shell
 eksctl create cluster --name my-cluster --region us-west-2 --node-type t2.medium --nodes-min 1 --nodes-max 2
 aws eks update-kubeconfig --region us-west-2 --name my-cluster
-kubectl get nodes
+
 ```
 
 ### Step 12: Run Manifests
 ``` shell
+kubectl get nodes
 kubectl create namespace workshop
 kubectl apply -f .
 kubectl delete -f .
